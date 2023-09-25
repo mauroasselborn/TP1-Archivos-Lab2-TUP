@@ -1,0 +1,53 @@
+# depslib dependency file v1.0
+1695605839 source:d:\google drive\mi unidad\utn tup\1er parcial lab2 tup - archivos - c++\main.cpp
+	<iostream>
+	<stdlib.h>
+	<cstring>
+	<time.h>
+	"headers/utilidades.h"
+	"headers/sMenuJugador.h"
+	"headers/sMenuDeportes.h"
+	"headers/sMenuReportes.h"
+	"headers/sMenuConfiguracion.h"
+
+1695512593 source:g:\mi unidad\utn tup\1er parcial lab2 tup - archivos - c++\main.cpp
+	<iostream>
+	<stdlib.h>
+	<cstring>
+	<time.h>
+	"archivo.h"
+	"headers/utilidades.h"
+	"headers/sMenuJugador.h"
+
+1695509478 g:\mi unidad\utn tup\1er parcial lab2 tup - archivos - c++\headers\utilidades.h
+	<windows.h>
+
+1695513595 g:\mi unidad\utn tup\1er parcial lab2 tup - archivos - c++\headers\smenujugador.h
+	"jugador.h"
+
+1695512240 g:\mi unidad\utn tup\1er parcial lab2 tup - archivos - c++\class\archivo.h
+
+1695513611 g:\mi unidad\utn tup\1er parcial lab2 tup - archivos - c++\class\jugador.h
+	"fecha.h"
+
+1695512404 g:\mi unidad\utn tup\1er parcial lab2 tup - archivos - c++\class\fecha.h
+
+1695509492 d:\google drive\mi unidad\utn tup\1er parcial lab2 tup - archivos - c++\headers\utilidades.h
+	<windows.h>
+
+1695604736 d:\google drive\mi unidad\utn tup\1er parcial lab2 tup - archivos - c++\headers\smenujugador.h
+	"cJugador.h"
+
+1695605094 d:\google drive\mi unidad\utn tup\1er parcial lab2 tup - archivos - c++\class\carchivo.h
+
+1695602942 d:\google drive\mi unidad\utn tup\1er parcial lab2 tup - archivos - c++\class\cjugador.h
+	"cFecha.h"
+
+1695533467 d:\google drive\mi unidad\utn tup\1er parcial lab2 tup - archivos - c++\class\cfecha.h
+
+1695600885 d:\google drive\mi unidad\utn tup\1er parcial lab2 tup - archivos - c++\headers\smenudeportes.h
+
+1695600884 d:\google drive\mi unidad\utn tup\1er parcial lab2 tup - archivos - c++\headers\smenureportes.h
+
+1695605959 d:\google drive\mi unidad\utn tup\1er parcial lab2 tup - archivos - c++\headers\smenuconfiguracion.h
+

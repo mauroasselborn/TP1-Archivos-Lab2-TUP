@@ -13,6 +13,7 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-g" />
+					<Add directory="class" />
 				</Compiler>
 			</Target>
 			<Target title="Release">
@@ -22,6 +23,7 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-O2" />
+					<Add directory="class" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -32,6 +34,15 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="class/cArchivo.h" />
+		<Unit filename="class/cDeporte.h" />
+		<Unit filename="class/cFecha.h" />
+		<Unit filename="class/cJugador.h" />
+		<Unit filename="headers/sMenuConfiguracion.h" />
+		<Unit filename="headers/sMenuDeportes.h" />
+		<Unit filename="headers/sMenuJugador.h" />
+		<Unit filename="headers/sMenuReportes.h" />
+		<Unit filename="headers/utilidades.h" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
