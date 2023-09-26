@@ -1,9 +1,13 @@
 #ifndef SMENUDEPORTES_H_INCLUDED
 #define SMENUDEPORTES_H_INCLUDED
 
+
+#include "cDeporte.h"
+
 void subMenuDeportes()
 {
     int opcion;
+    Deporte deporte;
 
     while (true)
     {
@@ -28,19 +32,19 @@ void subMenuDeportes()
                 return;
                 break;
             case 1:
-                //agregarDeporte();
+                deporte.agregarDeporte();
                 break;
             case 2:
-                //listarDeportePorID();
+                deporte.listarDeportePorID();
                 break;
             case 3:
-                //listarTodo();
+                deporte.listarDeportes();
                 break;
             case 4:
-                //modificarAnioOrigen();
+                deporte.modificarAnioOrigen();
                 break;
             case 5:
-                //eliminarRegistro();
+                deporte.eliminarDeporte();
                 break;
 
             default:

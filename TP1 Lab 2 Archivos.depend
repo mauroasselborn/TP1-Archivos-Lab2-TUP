@@ -43,17 +43,19 @@
 
 1695689057 d:\google drive\mi unidad\utn tup\1er parcial lab2 tup - archivos - c++\class\carchivo.h
 
-1695689486 d:\google drive\mi unidad\utn tup\1er parcial lab2 tup - archivos - c++\class\cjugador.h
+1695701524 d:\google drive\mi unidad\utn tup\1er parcial lab2 tup - archivos - c++\class\cjugador.h
 	"cFecha.h"
 	"cArchivo.h"
+	"cDeporte.h"
 
 1695681219 d:\google drive\mi unidad\utn tup\1er parcial lab2 tup - archivos - c++\class\cfecha.h
 
-1695607990 d:\google drive\mi unidad\utn tup\1er parcial lab2 tup - archivos - c++\headers\smenudeportes.h
+1695700710 d:\google drive\mi unidad\utn tup\1er parcial lab2 tup - archivos - c++\headers\smenudeportes.h
+	"cDeporte.h"
 
 1695687992 d:\google drive\mi unidad\utn tup\1er parcial lab2 tup - archivos - c++\headers\smenureportes.h
 
-1695691847 d:\google drive\mi unidad\utn tup\1er parcial lab2 tup - archivos - c++\headers\smenuconfiguracion.h
+1695694297 d:\google drive\mi unidad\utn tup\1er parcial lab2 tup - archivos - c++\headers\smenuconfiguracion.h
 
 1695679630 g:\mi unidad\utn tup\1er parcial lab2 tup - archivos - c++\class\cjugador.h
 	"cFecha.h"
@@ -68,4 +70,43 @@
 1695608123 g:\mi unidad\utn tup\1er parcial lab2 tup - archivos - c++\headers\smenureportes.h
 
 1695607710 g:\mi unidad\utn tup\1er parcial lab2 tup - archivos - c++\headers\smenuconfiguracion.h
+
+1695701561 d:\google drive\mi unidad\utn tup\1er parcial lab2 tup - archivos - c++\class\cdeporte.h
+	"cArchivo.h"
+
+1695688159 source:c:\users\mauro\desktop\1er parcial lab2 tup - archivos - c++\main.cpp
+	<iostream>
+	<stdlib.h>
+	<cstring>
+	<time.h>
+	"headers/utilidades.h"
+	"headers/sMenuJugador.h"
+	"headers/sMenuDeportes.h"
+	"headers/sMenuReportes.h"
+	"headers/sMenuConfiguracion.h"
+
+1695682246 c:\users\mauro\desktop\1er parcial lab2 tup - archivos - c++\headers\utilidades.h
+	<windows.h>
+
+1695688303 c:\users\mauro\desktop\1er parcial lab2 tup - archivos - c++\headers\smenujugador.h
+	"cJugador.h"
+
+1695701536 c:\users\mauro\desktop\1er parcial lab2 tup - archivos - c++\class\cjugador.h
+	"cFecha.h"
+	"cArchivo.h"
+	"cDeporte.h"
+
+1695681230 c:\users\mauro\desktop\1er parcial lab2 tup - archivos - c++\class\cfecha.h
+
+1695689069 c:\users\mauro\desktop\1er parcial lab2 tup - archivos - c++\class\carchivo.h
+
+1695747170 c:\users\mauro\desktop\1er parcial lab2 tup - archivos - c++\class\cdeporte.h
+	"cArchivo.h"
+
+1695700719 c:\users\mauro\desktop\1er parcial lab2 tup - archivos - c++\headers\smenudeportes.h
+	"cDeporte.h"
+
+1695687999 c:\users\mauro\desktop\1er parcial lab2 tup - archivos - c++\headers\smenureportes.h
+
+1695694304 c:\users\mauro\desktop\1er parcial lab2 tup - archivos - c++\headers\smenuconfiguracion.h
 

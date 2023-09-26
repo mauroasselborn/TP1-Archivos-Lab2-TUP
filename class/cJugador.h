@@ -3,6 +3,7 @@
 
 #include "cFecha.h"
 #include "cArchivo.h"
+#include "cDeporte.h"
 
 class Jugador
 {
@@ -60,13 +61,16 @@ public:
     void modificarFechaIngreso(void);
     void eliminarJugador(void);
 
-    bool existeDNI(int _DNI);
+    bool validarDNI(int _DNI);
+    bool validarClaustro(int _claustro);
+    bool validarMatricula(int _matricula);
 
 };
 
 Jugador::Jugador(bool _estado = true) { estado = _estado; }
 
 
+/// AGREGA UN JUGADOR AL ARCHIVO
 void Jugador::agregarJugador(void){
 
     borrarPantalla();
@@ -84,11 +88,14 @@ void Jugador::agregarJugador(void){
     int _dia, _mes, _anio;
     Fecha tmpFechaDeIncripcion;
     float tmpMatricula;
+    Deporte tmpDep;
 
 
     cout << "Ingrese el DNI: ";
     cin >> tmpDNI;
-    if(existeDNI(tmpDNI)) return;
+
+    if(!validarDNI(tmpDNI)) return;
+
     cin.ignore();
     cout << "Ingrese el nombre: ";
     cin.getline(tmpNombre,30);
@@ -98,20 +105,29 @@ void Jugador::agregarJugador(void){
     cin.getline(tmpEmail,30);
     cout << "Ingrese el telefono: ";
     cin.getline(tmpTelefono,30);
-    cout << "Ingrese el N de claustro: ";
+
+    cout << "Ingrese el Nro de claustro: ";
     cin >> tmpClaustro;
-    cout << "Ingrese el N de deporte: ";
+
+    if(!validarClaustro(tmpClaustro)) return;
+
+    cout << "Ingrese el Nro de deporte: ";
     cin >> tmpDeporte;
-    cout << "Ingrese el N de equipo: ";
+
+    if(!tmpDep.validarDeporte(tmpDeporte)) return;
+
+    cout << "Ingrese el Nro de equipo: ";
     cin >> tmpNumeroDeEquipo;
+
     cout << "Ingrese fecha de incripcion dia, mes, a" << char(164)<<"o: ";
     cin >> _dia;
     gotoxy ( 45, 11 ); cout << "/ "; cin >> _mes;
     gotoxy ( 49, 11 ); cout << "/ "; cin >> _anio;
+
     cout << "Ingrese matricula $: ";
     cin >> tmpMatricula;
 
-
+    if(!validarMatricula(tmpMatricula)) return;
 
 
     ///SETEOS
@@ -167,7 +183,7 @@ void Jugador::listarJugadorPorDNI(){
             cout << "CLAUSTRO: " << _vClaustro[jugador.getClaustro()] << endl;
             cout << "DEPORTE: " << jugador.getNumeroDeEquipo() << endl;
             cout << "FECHA DE INSCRIPCION: " << jugador.getFechaDeIncripcion().getDia() << "/" << jugador.getFechaDeIncripcion().getMes() << "/" << jugador.getFechaDeIncripcion().getAnio() << endl;
-            cout << "MATRICULA: " << jugador.getMatricula() << endl;
+            cout << "MATRICULA: " << jugador.getMatricula() << "$" <<endl;
             encontrado = true;
             //pause();
             break;
@@ -189,7 +205,7 @@ void Jugador::listarJugadores(){
 
     if( (archivo = fopen("files/Jugadores.dat","rb")) == NULL)
     {
-        cerr << "\nError Al Abrir El Archivo" << endl;
+        cerr << "\n\nError Al Abrir El Archivo" << endl;
         pause();
         return;
     }
@@ -212,7 +228,7 @@ void Jugador::listarJugadores(){
             cout << "CLAUSTRO: " << _vClaustro[jugador.getClaustro()] << endl;
             cout << "DEPORTE: " << jugador.getNumeroDeEquipo() << endl;
             cout << "FECHA DE INSCRIPCION: " << jugador.getFechaDeIncripcion().getDia() << "/" << jugador.getFechaDeIncripcion().getMes() << "/" << jugador.getFechaDeIncripcion().getAnio() << endl;
-            cout << "MATRICULA: " << jugador.getMatricula() << endl;
+            cout << "MATRICULA: " << jugador.getMatricula() << "$" << endl;
 
             pause();
         }
@@ -231,7 +247,7 @@ void Jugador::eliminarJugador(){
     FILE * archivo;
     if( (archivo = fopen("files/Jugadores.dat","rb+")) == NULL)
     {
-        cerr << "\nError Al Abrir El Archivo" << endl;
+        cerr << "\n\nError Al Abrir El Archivo" << endl;
         pause();
         return;
     }
@@ -267,24 +283,24 @@ void Jugador::eliminarJugador(){
 
 
 ///VALIDA SI EL DNI EXISTE EN EL ARCHIVO,  CON O SIN BAJA LOGICA Y LO INFORMA
-bool Jugador::existeDNI(int _DNI){
+bool Jugador::validarDNI(int _DNI){
 
     FILE * archivo;
     if( (archivo = fopen("files/Jugadores.dat","rb")) == NULL)
     {
-        cerr << "\nError Al Abrir El Archivo" << endl;
+        cerr << "\n\nError Al Abrir El Archivo" << endl;
         pause();
-        return true;
+        return false;
     }
 
     Jugador jugador;
-    bool encontrado = false;
+    bool valida = true;
 
     while(fread(&jugador, sizeof(jugador),1,archivo) == 1){
 
         if(jugador.getDNI() == _DNI){
 
-            encontrado = true;
+            valida = false;
 
             if(jugador.getEstado()){
                 cout << "\n\nDNI Duplicado" << endl;
@@ -298,8 +314,28 @@ bool Jugador::existeDNI(int _DNI){
     }
 
     fclose(archivo);
-    return encontrado;
+    return valida;
 }
 
+/// VALIDA EL CLAUSTRO
+bool Jugador::validarClaustro(int _claustro){
+    if(_claustro >= 1 && _claustro <= 4) return true;
+    else{
+        cout << "\n\nSolo se admite valor 1 a 4" << endl;
+        pause();
+        return false;
+    }
+}
+
+
+/// VALIDA EL MATRICULA
+bool Jugador::validarMatricula(int _matricula){
+    if(_matricula >= 0) return true;
+    else {
+        cout << "\n\nSolo se admite valor 0 o mayor a 0" << endl;
+        pause();
+        return false;
+    }
+}
 
 #endif // CJUGADOR_H
