@@ -4,12 +4,7 @@
 #include <time.h>
 
 
-
-
 using namespace std;
-
-
-///Include Class
 
 
 ///Include Headers
@@ -20,16 +15,11 @@ using namespace std;
 #include "headers/sMenuConfiguracion.h"
 
 
-
 int main()
 {
 
     tituloTP();
     system("mode con cols=100 lines=20");
-
-
-
-    //Declaracion de Variables
 
     int opcion;
 
@@ -61,10 +51,10 @@ int main()
                 subMenuJugador();
                 break;
             case 2:
-
+                subMenuDeportes();
                 break;
             case 3:
-
+                subMenuReportes();
                 break;
             case 4:
                 subMenuConfiguracion();

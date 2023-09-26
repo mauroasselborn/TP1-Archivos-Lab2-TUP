@@ -4,19 +4,10 @@
 #include "cJugador.h"
 
 void subMenuJugador()
-
 {
-
-    tituloTP();
-    system("mode con cols=100 lines=20");
-    ocultarCursor();
-
-
-    //Declaracion de Variables
-
     int opcion;
 
-//    Jugador jugador;
+    Jugador jugador;
 
 
     while (true)
@@ -43,19 +34,19 @@ void subMenuJugador()
             colorTexto(14);
             return;
         case 1:
-            //jugador.agregarJugador();
+            jugador.agregarJugador();
             break;
         case 2:
-           // subMenuListarJugadorPorDNI();
+            jugador.listarJugadorPorDNI();
             break;
         case 3:
-           // subMenuListarJugadores();
+            jugador.listarJugadores();
             break;
         case 4:
-          //  subMenuModificarFechaInscricion();
+            //jugador.modificarFechaIngreso();
             break;
         case 5:
-           // subMenuEliminarJugador();
+            jugador.eliminarJugador();
             break;
         default:
             entradaIncorrecta();

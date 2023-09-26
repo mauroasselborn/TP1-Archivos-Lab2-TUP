@@ -1,6 +1,7 @@
 #ifndef SMENUCONFIGURACION_H_INCLUDED
 #define SMENUCONFIGURACION_H_INCLUDED
 
+void subMenuConfiguracion();
 void copiaDeSegArchivoJugadores();
 void copiaDeSegArchivoDeportes();
 void restaurarArchivoJugadores();
@@ -37,10 +38,10 @@ void subMenuConfiguracion()
                 return;
                 break;
             case 1:
-                //copiaDeSegArchivoJugadores();
+                copiaDeSegArchivoJugadores();
                 break;
             case 2:
-                //copiaDeSegArchivoDeportes();
+                copiaDeSegArchivoDeportes();
                 break;
             case 3:
                 //restaurarArchivoJugadores();
@@ -58,4 +59,26 @@ void subMenuConfiguracion()
         }
     }
 }
+
+
+void copiaDeSegArchivoJugadores(){
+
+    (!system ( "copiaSeguridadJugadores.cmd" )) ? cout << "\n" << "EXITO al realizar copia de seguridad" : cout << "\n" << "ERROR al realizar copia de seguridad";
+    pause();
+}
+
+void copiaDeSegArchivoDeportes(){
+    (!system ( "copiaSeguridadDeportes.cmd" )) ? cout << "\n" << "EXITO al realizar copia de seguridad" : cout << "\n" << "ERROR al realizar copia de seguridad";
+    pause();
+}
+
+void restaurarArchivoJugadores(){
+}
+
+void restaurarArchivoDeportes(){
+}
+
+void establecerDatosInicio(){
+}
+
 #endif // SMENUCONFIGURACION_H_INCLUDED

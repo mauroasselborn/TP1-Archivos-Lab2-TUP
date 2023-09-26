@@ -188,6 +188,8 @@ Fecha Fecha::operator+(int masdias)
 int Fecha::operator -(Fecha &obj)
 {
   return NumeroSerie()-obj.NumeroSerie();
-  }
+}
+
+
 
 #endif // CFECHA_H_INCLUDED

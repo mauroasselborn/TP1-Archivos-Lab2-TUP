@@ -21,28 +21,19 @@ public:
 
 
     ///METODOS
-    bool escribirArchivo(const char _rutaArchivo, T& objeto){
-        FILE* archivo = fopen(_rutaArchivo,"ab");
-         if(archivo == NULL) {
-            cout << "Error al abrir el Archivo" << endl;
-            return false;
+    void escribirArchivo(T& objeto){
+
+        FILE* archivo;
+
+        if( (archivo = fopen(getRutaArchivo(),"ab")) == NULL)
+        {
+            cerr << "\nError Al Abrir El Archivo" << endl;
+            pause();
+            return;
         }
 
         fwrite(&objeto, sizeof(T),1,archivo);
         fclose(archivo);
-        return true;
-    }
-
-    bool leerArchivo(const char _rutaArchivo, T& objeto){
-        FILE* archivo = fopen(_rutaArchivo,"rb");
-        if(archivo == NULL) {
-            cout << "Error al abrir el Archivo" << endl;
-            return false;
-        }
-
-        fread(&objeto, sizeof(T),1,archivo);
-        fclose(archivo);
-        return true;
     }
 };
 

@@ -5,6 +5,7 @@
 
 
 void centrarTexto(string, SHORT);
+void imprimirFechaActual ( void );
 
 
 void colorTexto(int color)
@@ -48,6 +49,7 @@ void encabezado(string titulo)
 	cout << (char)32;
 	for (int j = 0; j < 98; j++) cout << (char)205;
 	cout << endl;
+	imprimirFechaActual();
 }
 
 /** POSICIONAMIENTO DEL CURSOR **/
@@ -80,5 +82,23 @@ void ocultarCursor()
 	SetConsoleCursorInfo(consoleHandle, &info);
 }
 
+/** OBTENER FECHA ACTUAL **/
+void imprimirFechaActual ( void )
+{
+    int day, month, year;
+    struct tm *tiempo;
+
+    time_t fecha_sistema;
+    time ( &fecha_sistema );
+    tiempo = localtime ( &fecha_sistema );
+
+    year = tiempo->tm_year + 1900;
+    month = tiempo->tm_mon + 1;
+    day = tiempo->tm_mday;
+
+    gotoxy ( 80, 18 );
+    ( month < 10 ) ? cout << "Fecha: " << day << "/" << "0" << month << "/" << year : cout << "Fecha: " << day << "/" << month << "/" << year;
+    gotoxy ( 0, 3 );
+}
 
 #endif // UTILIDADES_H_INCLUDED
