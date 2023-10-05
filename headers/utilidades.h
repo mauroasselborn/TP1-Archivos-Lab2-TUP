@@ -50,6 +50,7 @@ void encabezado(string titulo)
 	for (int j = 0; j < 98; j++) cout << (char)205;
 	cout << endl;
 	imprimirFechaActual();
+	colorTexto(15);
 }
 
 /** POSICIONAMIENTO DEL CURSOR **/

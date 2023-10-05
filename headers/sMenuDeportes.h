@@ -13,12 +13,12 @@ void subMenuDeportes()
     {
         borrarPantalla();
         encabezado("MENU DEPORTES");
-        colorTexto(15);
+
 
         cout << "1) AGREGAR DEPORTE" << endl;
         cout << "2) LISTAR DEPORTE POR ID" << endl;
         cout << "3) LISTAR TODO" << endl;
-        cout << "4) MODIFICAR AÑO DE ORIGEN" << endl;
+        cout << "4) MODIFICAR A" << char(165) << "O DE ORIGEN" << endl;
         cout << "5) ELIMINAR REGISTRO" << endl;
         cout << "--------------------------------" << endl;
         cout << "0) VOLVER AL MENU PRINCIPAL" << endl;

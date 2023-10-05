@@ -23,6 +23,7 @@ class Fecha
     int NumeroSerie();
     bool operator >(Fecha &);
     bool operator ==(Fecha &);
+    bool validarFecha(int _dia, int _mes, int _anio);
     Fecha operator+(int);
     int operator -(Fecha &);
     void operator +=(int);
@@ -155,15 +156,17 @@ void Fecha::operator +=(int masdias)
  NumeroSerieaFecha(ns);
  }
 
-istream & operator>>(istream &entra, Fecha &f)
+istream & operator>>(istream &entra, Fecha &fecha)
 {
   cout<<"Ingrese el dia: ";
-  entra>>f.dia;
+  entra>>fecha.dia;
   cout<<"Ingrese el mes: ";
-  entra>>f.mes;
+  entra>>fecha.mes;
   cout<<"Ingrese el año: ";
-  entra>>f.anio;
+  entra>>fecha.anio;
+
   return entra;
+
 }
 
 ostream & operator<<(ostream &sale, Fecha &f)
@@ -191,5 +194,49 @@ int Fecha::operator -(Fecha &obj)
 }
 
 
+/// VALIDA FECHA DE INSCRIPCION
 
+bool Fecha::validarFecha(int _dia, int _mes, int _anio)
+{
+    int year, month, day;
+    bool valida;
+    struct tm *tiempo;
+
+    time_t fecha_sistema;
+    time ( &fecha_sistema );
+    tiempo = localtime ( &fecha_sistema );
+
+    year = tiempo->tm_year + 1900;
+    month = tiempo->tm_mon + 1;
+    day = tiempo->tm_mday;
+
+
+    if(_anio >= 1900 && _anio <= year)
+    {
+        if(_mes >= 1 && _mes <= 12)
+        {
+            if(_dia >= 1 && _dia <= 31)
+            {
+                if(_anio == year)
+                {
+                    if(_mes == month)
+                    {
+                        if(_dia > day) valida = false;
+                        else valida = true;
+                    }else if(_mes > month && _dia > day)
+                    {
+                        valida = false;
+                    }else valida = true;
+                }else valida = true;
+            }else valida = false;
+        }else valida = false;
+    }else valida = false;
+
+    if(!valida)
+    {
+        gotoxy(0,15);
+        cerr << "La Fecha ingresada no es una fecha valida" << endl;
+    }
+    return valida;
+}
 #endif // CFECHA_H_INCLUDED

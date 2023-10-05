@@ -11,7 +11,7 @@ void subMenuReportes()
 
         borrarPantalla();
         encabezado("MENU REPORTES");
-        colorTexto(15);
+
 
         cout << "1) "                                               << endl;
         cout << "2) "                                               << endl;

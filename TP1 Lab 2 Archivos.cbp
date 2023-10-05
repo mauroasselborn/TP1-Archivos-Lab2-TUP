@@ -34,10 +34,11 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
-		<Unit filename="class/cArchivo.h" />
 		<Unit filename="class/cDeporte.h" />
 		<Unit filename="class/cFecha.h" />
 		<Unit filename="class/cJugador.h" />
+		<Unit filename="headers/constantes.h" />
+		<Unit filename="headers/funcionesGlobales.h" />
 		<Unit filename="headers/sMenuConfiguracion.h" />
 		<Unit filename="headers/sMenuDeportes.h" />
 		<Unit filename="headers/sMenuJugador.h" />

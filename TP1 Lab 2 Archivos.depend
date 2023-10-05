@@ -1,31 +1,34 @@
 # depslib dependency file v1.0
-1695688148 source:d:\google drive\mi unidad\utn tup\1er parcial lab2 tup - archivos - c++\main.cpp
+1696473722 source:d:\google drive\mi unidad\utn tup\1er parcial lab2 tup - archivos - c++\main.cpp
 	<iostream>
 	<stdlib.h>
 	<cstring>
 	<time.h>
+	"headers/constantes.h"
+	"headers/funcionesGlobales.h"
 	"headers/utilidades.h"
 	"headers/sMenuJugador.h"
 	"headers/sMenuDeportes.h"
 	"headers/sMenuReportes.h"
 	"headers/sMenuConfiguracion.h"
 
-1695678803 source:g:\mi unidad\utn tup\1er parcial lab2 tup - archivos - c++\main.cpp
+1696211773 source:g:\mi unidad\utn tup\1er parcial lab2 tup - archivos - c++\main.cpp
 	<iostream>
 	<stdlib.h>
 	<cstring>
 	<time.h>
+	"headers/constantes.h"
+	"headers/funcionesGlobales.h"
 	"headers/utilidades.h"
 	"headers/sMenuJugador.h"
 	"headers/sMenuDeportes.h"
 	"headers/sMenuReportes.h"
 	"headers/sMenuConfiguracion.h"
-	"cFecha.h"
 
-1695509478 g:\mi unidad\utn tup\1er parcial lab2 tup - archivos - c++\headers\utilidades.h
+1696196500 g:\mi unidad\utn tup\1er parcial lab2 tup - archivos - c++\headers\utilidades.h
 	<windows.h>
 
-1695678851 g:\mi unidad\utn tup\1er parcial lab2 tup - archivos - c++\headers\smenujugador.h
+1696196644 g:\mi unidad\utn tup\1er parcial lab2 tup - archivos - c++\headers\smenujugador.h
 	"cJugador.h"
 
 1695512240 g:\mi unidad\utn tup\1er parcial lab2 tup - archivos - c++\class\archivo.h
@@ -35,78 +38,110 @@
 
 1695512404 g:\mi unidad\utn tup\1er parcial lab2 tup - archivos - c++\class\fecha.h
 
-1695682241 d:\google drive\mi unidad\utn tup\1er parcial lab2 tup - archivos - c++\headers\utilidades.h
+1696196500 d:\google drive\mi unidad\utn tup\1er parcial lab2 tup - archivos - c++\headers\utilidades.h
 	<windows.h>
 
-1695688293 d:\google drive\mi unidad\utn tup\1er parcial lab2 tup - archivos - c++\headers\smenujugador.h
+1696196644 d:\google drive\mi unidad\utn tup\1er parcial lab2 tup - archivos - c++\headers\smenujugador.h
 	"cJugador.h"
 
-1695689057 d:\google drive\mi unidad\utn tup\1er parcial lab2 tup - archivos - c++\class\carchivo.h
+1696216963 d:\google drive\mi unidad\utn tup\1er parcial lab2 tup - archivos - c++\class\carchivo.h
 
-1695701524 d:\google drive\mi unidad\utn tup\1er parcial lab2 tup - archivos - c++\class\cjugador.h
+1696475566 d:\google drive\mi unidad\utn tup\1er parcial lab2 tup - archivos - c++\class\cjugador.h
+	"cFecha.h"
+	"cDeporte.h"
+	"cArchivoJugador.h"
+
+1696459201 d:\google drive\mi unidad\utn tup\1er parcial lab2 tup - archivos - c++\class\cfecha.h
+
+1696202122 d:\google drive\mi unidad\utn tup\1er parcial lab2 tup - archivos - c++\headers\smenudeportes.h
+	"cDeporte.h"
+
+1696196595 d:\google drive\mi unidad\utn tup\1er parcial lab2 tup - archivos - c++\headers\smenureportes.h
+
+1696470950 d:\google drive\mi unidad\utn tup\1er parcial lab2 tup - archivos - c++\headers\smenuconfiguracion.h
+	"cJugador.h"
+
+1696209279 g:\mi unidad\utn tup\1er parcial lab2 tup - archivos - c++\class\cjugador.h
 	"cFecha.h"
 	"cArchivo.h"
 	"cDeporte.h"
 
-1695681219 d:\google drive\mi unidad\utn tup\1er parcial lab2 tup - archivos - c++\class\cfecha.h
+1696191216 g:\mi unidad\utn tup\1er parcial lab2 tup - archivos - c++\class\cfecha.h
 
-1695700710 d:\google drive\mi unidad\utn tup\1er parcial lab2 tup - archivos - c++\headers\smenudeportes.h
+1696201913 g:\mi unidad\utn tup\1er parcial lab2 tup - archivos - c++\class\carchivo.h
+
+1696202122 g:\mi unidad\utn tup\1er parcial lab2 tup - archivos - c++\headers\smenudeportes.h
 	"cDeporte.h"
 
-1695687992 d:\google drive\mi unidad\utn tup\1er parcial lab2 tup - archivos - c++\headers\smenureportes.h
+1696196595 g:\mi unidad\utn tup\1er parcial lab2 tup - archivos - c++\headers\smenureportes.h
 
-1695694297 d:\google drive\mi unidad\utn tup\1er parcial lab2 tup - archivos - c++\headers\smenuconfiguracion.h
+1696213630 g:\mi unidad\utn tup\1er parcial lab2 tup - archivos - c++\headers\smenuconfiguracion.h
+	"cJugador.h"
 
-1695679630 g:\mi unidad\utn tup\1er parcial lab2 tup - archivos - c++\class\cjugador.h
-	"cFecha.h"
-	"cArchivo.h"
+1696476260 d:\google drive\mi unidad\utn tup\1er parcial lab2 tup - archivos - c++\class\cdeporte.h
+	"cArchivoDeporte.h"
 
-1695678659 g:\mi unidad\utn tup\1er parcial lab2 tup - archivos - c++\class\cfecha.h
-
-1695613469 g:\mi unidad\utn tup\1er parcial lab2 tup - archivos - c++\class\carchivo.h
-
-1695607997 g:\mi unidad\utn tup\1er parcial lab2 tup - archivos - c++\headers\smenudeportes.h
-
-1695608123 g:\mi unidad\utn tup\1er parcial lab2 tup - archivos - c++\headers\smenureportes.h
-
-1695607710 g:\mi unidad\utn tup\1er parcial lab2 tup - archivos - c++\headers\smenuconfiguracion.h
-
-1695701561 d:\google drive\mi unidad\utn tup\1er parcial lab2 tup - archivos - c++\class\cdeporte.h
-	"cArchivo.h"
-
-1695688159 source:c:\users\mauro\desktop\1er parcial lab2 tup - archivos - c++\main.cpp
+1696211773 source:c:\users\mauro\desktop\1er parcial lab2 tup - archivos - c++\main.cpp
 	<iostream>
 	<stdlib.h>
 	<cstring>
 	<time.h>
+	"headers/constantes.h"
+	"headers/funcionesGlobales.h"
 	"headers/utilidades.h"
 	"headers/sMenuJugador.h"
 	"headers/sMenuDeportes.h"
 	"headers/sMenuReportes.h"
 	"headers/sMenuConfiguracion.h"
 
-1695682246 c:\users\mauro\desktop\1er parcial lab2 tup - archivos - c++\headers\utilidades.h
+1696196500 c:\users\mauro\desktop\1er parcial lab2 tup - archivos - c++\headers\utilidades.h
 	<windows.h>
 
-1695688303 c:\users\mauro\desktop\1er parcial lab2 tup - archivos - c++\headers\smenujugador.h
+1696196644 c:\users\mauro\desktop\1er parcial lab2 tup - archivos - c++\headers\smenujugador.h
 	"cJugador.h"
 
-1695701536 c:\users\mauro\desktop\1er parcial lab2 tup - archivos - c++\class\cjugador.h
+1696461486 c:\users\mauro\desktop\1er parcial lab2 tup - archivos - c++\class\cjugador.h
 	"cFecha.h"
-	"cArchivo.h"
+	"cArchivoJugador.h"
 	"cDeporte.h"
 
-1695681230 c:\users\mauro\desktop\1er parcial lab2 tup - archivos - c++\class\cfecha.h
+1696459201 c:\users\mauro\desktop\1er parcial lab2 tup - archivos - c++\class\cfecha.h
 
-1695689069 c:\users\mauro\desktop\1er parcial lab2 tup - archivos - c++\class\carchivo.h
+1696216963 c:\users\mauro\desktop\1er parcial lab2 tup - archivos - c++\class\carchivo.h
 
-1695747170 c:\users\mauro\desktop\1er parcial lab2 tup - archivos - c++\class\cdeporte.h
+1696460453 c:\users\mauro\desktop\1er parcial lab2 tup - archivos - c++\class\cdeporte.h
 	"cArchivo.h"
 
-1695700719 c:\users\mauro\desktop\1er parcial lab2 tup - archivos - c++\headers\smenudeportes.h
+1696202122 c:\users\mauro\desktop\1er parcial lab2 tup - archivos - c++\headers\smenudeportes.h
 	"cDeporte.h"
 
-1695687999 c:\users\mauro\desktop\1er parcial lab2 tup - archivos - c++\headers\smenureportes.h
+1696196595 c:\users\mauro\desktop\1er parcial lab2 tup - archivos - c++\headers\smenureportes.h
 
-1695694304 c:\users\mauro\desktop\1er parcial lab2 tup - archivos - c++\headers\smenuconfiguracion.h
+1696352307 c:\users\mauro\desktop\1er parcial lab2 tup - archivos - c++\headers\smenuconfiguracion.h
+	"cJugador.h"
+
+1696468692 d:\google drive\mi unidad\utn tup\1er parcial lab2 tup - archivos - c++\headers\funcionesglobales.h
+	"utilidades.h"
+
+1696460314 c:\users\mauro\desktop\1er parcial lab2 tup - archivos - c++\headers\funcionesglobales.h
+	"utilidades.h"
+
+1696196077 g:\mi unidad\utn tup\1er parcial lab2 tup - archivos - c++\headers\funcionesglobales.h
+	"utilidades.h"
+
+1696202808 g:\mi unidad\utn tup\1er parcial lab2 tup - archivos - c++\class\cdeporte.h
+	"cArchivo.h"
+
+1696212737 g:\mi unidad\utn tup\1er parcial lab2 tup - archivos - c++\headers\constantes.h
+
+1696471047 d:\google drive\mi unidad\utn tup\1er parcial lab2 tup - archivos - c++\headers\constantes.h
+
+1696212737 c:\users\mauro\desktop\1er parcial lab2 tup - archivos - c++\headers\constantes.h
+
+1696461477 c:\users\mauro\desktop\1er parcial lab2 tup - archivos - c++\class\carchivojugador.h
+	"cJugador.h"
+
+1696468332 d:\google drive\mi unidad\utn tup\1er parcial lab2 tup - archivos - c++\class\carchivojugador.h
+
+1696468277 d:\google drive\mi unidad\utn tup\1er parcial lab2 tup - archivos - c++\class\carchivodeporte.h
 

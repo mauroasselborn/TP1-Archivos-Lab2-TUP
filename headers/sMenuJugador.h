@@ -15,7 +15,7 @@ void subMenuJugador()
 
         borrarPantalla();
         encabezado("MENU JUGADORES");
-        colorTexto(15);
+
 
         cout << "1) AGREGAR JUGADOR"                << endl;
         cout << "2) LISTAR JUGADOR POR DNI"         << endl;
@@ -43,7 +43,7 @@ void subMenuJugador()
             jugador.listarJugadores();
             break;
         case 4:
-            //jugador.modificarFechaIngreso();
+            jugador.modificarFechaIngreso();
             break;
         case 5:
             jugador.eliminarJugador();

@@ -2,54 +2,59 @@
 <CodeBlocks_layout_file>
 	<FileVersion major="1" minor="0" />
 	<ActiveTarget name="Debug" />
-	<File name="headers\sMenuConfiguracion.h" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="3" zoom_2="0">
+	<File name="main.cpp" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="4" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="1760" topLine="29" />
+			<Cursor1 position="406" topLine="32" />
 		</Cursor>
 	</File>
-	<File name="class\cFecha.h" open="0" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="6" zoom_2="0">
+	<File name="headers\sMenuJugador.h" open="0" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="3" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="64" topLine="62" />
+			<Cursor1 position="695" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="headers\sMenuReportes.h" open="0" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="headers\constantes.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="70" topLine="0" />
+			<Cursor1 position="541" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="class\cArchivo.h" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="4" zoom_2="0">
+	<File name="headers\utilidades.h" open="0" top="0" tabpos="11" split="0" active="1" splitpos="0" zoom_1="4" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="485" topLine="11" />
+			<Cursor1 position="720" topLine="16" />
 		</Cursor>
 	</File>
-	<File name="headers\sMenuDeportes.h" open="0" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="3" zoom_2="0">
+	<File name="headers\sMenuDeportes.h" open="0" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="3" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="229" topLine="20" />
+			<Cursor1 position="676" topLine="12" />
 		</Cursor>
 	</File>
 	<File name="class\cJugador.h" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="3" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="3456" topLine="109" />
+			<Cursor1 position="11008" topLine="353" />
 		</Cursor>
 	</File>
-	<File name="headers\utilidades.h" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="headers\sMenuReportes.h" open="0" top="0" tabpos="10" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="592" topLine="0" />
+			<Cursor1 position="210" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="class\cDeporte.h" open="1" top="1" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="class\cFecha.h" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="2" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="1102" topLine="93" />
+			<Cursor1 position="5661" topLine="207" />
 		</Cursor>
 	</File>
-	<File name="headers\sMenuJugador.h" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="3" zoom_2="0">
+	<File name="headers\funcionesGlobales.h" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="2" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="1398" topLine="35" />
+			<Cursor1 position="770" topLine="7" />
 		</Cursor>
 	</File>
-	<File name="main.cpp" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="3" zoom_2="0">
+	<File name="headers\sMenuConfiguracion.h" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="1" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="1237" topLine="40" />
+			<Cursor1 position="1821" topLine="51" />
+		</Cursor>
+	</File>
+	<File name="class\cDeporte.h" open="1" top="1" tabpos="1" split="0" active="1" splitpos="0" zoom_1="4" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="5300" topLine="343" />
 		</Cursor>
 	</File>
 </CodeBlocks_layout_file>

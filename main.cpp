@@ -7,7 +7,10 @@
 using namespace std;
 
 
+
 ///Include Headers
+#include "headers/constantes.h"
+#include "headers/funcionesGlobales.h"
 #include "headers/utilidades.h"
 #include "headers/sMenuJugador.h"
 #include "headers/sMenuDeportes.h"
@@ -28,7 +31,6 @@ int main()
 
         borrarPantalla();
         encabezado("MENU PRINCIPAL");
-        colorTexto(15);
 
         cout << "1) MENU JUGADORES" << endl;
         cout << "2) MENU DEPORTES" << endl;

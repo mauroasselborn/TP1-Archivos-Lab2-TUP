@@ -2,7 +2,7 @@
 #define CARCHIVO_H_INCLUDED
 
 
-template <typename T>
+template <typename Clase>
 
 class Archivo{
 
@@ -13,7 +13,7 @@ public:
     Archivo(const char *_rutaArchivo){ strcpy(rutaArchivo, _rutaArchivo); }
 
     ///GETTERS
-    char* getRutaArchivo(){ return rutaArchivo; }
+    const char* getRutaArchivo(){ return rutaArchivo; }
 
 
     ///SETTERS
@@ -21,7 +21,7 @@ public:
 
 
     ///METODOS
-    void escribirArchivo(T& objeto){
+    void escribirArchivo(Clase& objeto){
 
         FILE* archivo;
 
@@ -29,10 +29,10 @@ public:
         {
             cerr << "\nError Al Abrir El Archivo" << endl;
             pause();
-            return;
+            exit(1);
         }
 
-        fwrite(&objeto, sizeof(T),1,archivo);
+        fwrite(&objeto, sizeof(Clase),1,archivo);
         fclose(archivo);
     }
 };

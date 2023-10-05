@@ -1,6 +1,8 @@
 #ifndef SMENUCONFIGURACION_H_INCLUDED
 #define SMENUCONFIGURACION_H_INCLUDED
 
+#include "cJugador.h"
+
 void subMenuConfiguracion();
 void copiaDeSegArchivoJugadores();
 void copiaDeSegArchivoDeportes();
@@ -19,7 +21,7 @@ void subMenuConfiguracion()
 
         borrarPantalla();
         encabezado("MENU CONFIGURACION");
-        colorTexto(15);
+
 
         cout << "1) COPIA DE SEGURIDAD DEL ARCHIVO DE JUGADORES"    << endl;
         cout << "2) COPIA DE SEGURIDAD DEL ARCHIVO DE DEPORTES"     << endl;
@@ -44,13 +46,13 @@ void subMenuConfiguracion()
                 copiaDeSegArchivoDeportes();
                 break;
             case 3:
-                //restaurarArchivoJugadores();
+                restaurarArchivoJugadores();
                 break;
             case 4:
-                //restaurarArchivoDeportes();
+                restaurarArchivoDeportes();
                 break;
             case 5:
-                //establecerDatosInicio();
+                establecerDatosInicio();
                 break;
 
             default:
@@ -61,24 +63,35 @@ void subMenuConfiguracion()
 }
 
 
-void copiaDeSegArchivoJugadores(){
-
-    (!system ( "copiaSeguridadJugadores.cmd" )) ? cout << "\n" << "EXITO al realizar copia de seguridad" : cout << "\n" << "ERROR al realizar copia de seguridad";
-    pause();
+void copiaDeSegArchivoJugadores()
+{
+    remove(RUTA_BKP_JUGADORES);
+    system("copy files\\Jugadores.dat files\\backups\\Jugadores.bkp");
 }
 
-void copiaDeSegArchivoDeportes(){
-    (!system ( "copiaSeguridadDeportes.cmd" )) ? cout << "\n" << "EXITO al realizar copia de seguridad" : cout << "\n" << "ERROR al realizar copia de seguridad";
-    pause();
+void copiaDeSegArchivoDeportes()
+{
+    remove(RUTA_BKP_DEPORTES);
+    system("copy files\\Deportes.dat files\\backups\\Deportes.bkp");
 }
 
-void restaurarArchivoJugadores(){
+void restaurarArchivoJugadores()
+{
+    remove(RUTA_JUGADORES);
+    system("copy files\\backups\\Jugadores.bkp files\\Jugadores.dat");}
+
+void restaurarArchivoDeportes()
+{
+    remove(RUTA_DEPORTE);
+    system("copy files\\backups\\Deportes.bkp files\\Deportes.dat");
 }
 
-void restaurarArchivoDeportes(){
-}
 
-void establecerDatosInicio(){
+void establecerDatosInicio()
+{
+    remove(RUTA_JUGADORES);    remove(RUTA_DEPORTE);
+    system("copy files\\BackUps\\DatosdeInicio\\DatosInicioJugadores.ini files\\Jugadores.dat");
+    system("copy files\\BackUps\\DatosdeInicio\\DatosInicioDeportes.ini files\\Deportes.dat");
 }
 
 #endif // SMENUCONFIGURACION_H_INCLUDED
